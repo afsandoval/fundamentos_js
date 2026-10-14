@@ -9,10 +9,11 @@ console.log(typeof b) //number
 
 //SUMA
 console.log("La Suma entre " + a + " y " + b + " es igual a: " + (a + b));
+console.log(`La Suma entre ${a} y ${b} es igual a: ${a + b}`);
 
 //RESTA
 console.log("La Resta entre " + a + " y " + b + " es igual a: " + (a - b));
-
+    
 //MULTIPICACION
 console.log("La Multiplicacion entre " + a + " y " + b + " es igual a: " + (a * b));
 
