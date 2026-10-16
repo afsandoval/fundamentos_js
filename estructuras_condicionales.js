@@ -151,6 +151,7 @@ switch (opcion){
             console.log("No se puede dividir entre 0");
         }
     break;
+
     default: 
-    console.log("Opcion no valida");
+        console.log("Opcion no valida");
 }
