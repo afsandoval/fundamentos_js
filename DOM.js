@@ -52,6 +52,42 @@ contactanos.classList.add("destacado");
 let logoSENA = document.getElementById("myimg");
 logoSENA.src = "logoSenaVerde.png"
 
+//Cambiar la propiedad HREF de un Enlace desde el Javascript
+let mylink = document.getElementById("mylink");
+mylink.href = "https://betowa.sena.edu.co/";
+
+//Crear un Elemento de Lista y agregarlo en el DOM
+let lista = document.getElementById("lista"); //Capture al Elemento Padre
+
+let nuevoElemetoLi = document.createElement("li"); //Cree el Elemeto Hijo
+nuevoElemetoLi.innerText = "JavaScript";
+
+lista.appendChild(nuevoElemetoLi); //Agregue el Elemento Hijo al Padre
+
+//Insertar nuevas Etiquetas HTML con JavaScript
+let nuevoDiv = document.createElement("div");
+nuevoDiv.innerHTML = `
+        <h1>Nuevo Titulo desde el JavaScript</h1>
+        <p>Nuevo parrafo con JavaScript</p>
+        <img src="LogoSenaNaranja.png"></img>
+`;
+document.body.appendChild(nuevoDiv);
+
+//Eliminar un Elemento del HTML
+let divPadre = document.getElementById("divPadre");
+let tituloHijo = document.getElementById("tituloHijo");
+
+divPadre.removeChild(tituloHijo);
+
+//Reemplazar un Elemento HTML
+let nuevoTitulo = document.createElement("h1");
+nuevoTitulo.innerText = "Este es un Titulo nuevo que reemplaza al viejo";
+
+let tituloHijo2 = document.getElementById("tituloHijo2");
+
+divPadre.replaceChild(nuevoTitulo, tituloHijo2);
+
+
 
 
 

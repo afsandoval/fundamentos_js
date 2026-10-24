@@ -11,7 +11,12 @@
             <h1 id="tituloHeader">DOM</h1>
             <p class="descripcion">DOCUMENT OBJECT MODEL</p>
             <p>JavaScript</p>
-            <div></div>
+
+            <div id="divPadre">
+                <h3 id="tituloHijo">Este es un Titulo hijo</h3>
+                <h3 id="tituloHijo2">Este es un Titulo hijo 2</h3>
+            </div>
+
         </header>
 
         <main>
@@ -22,10 +27,24 @@
 
         <footer>
             <h1 id="contactanos">CONTACTANOS</h1>
-            <ul id="lista"></ul>
+
+            <ul id="lista"> <!-- Elemento Padre -->              
+                <!-- Incluir los Elementos Hijos de la Lista desde JS -->
+            </ul>
+
             <img id="myimg" src="LogoSenaNaranja.png" alt="LogoSENA" width="100px" />
             <a id="mylink" href="https://www.sena.edu.co/">Enlace SENA</a>
         </footer>
+
+        <!-- 
+
+        <div>
+            <h1>Mas codigo HTML</h1>
+            <p>Mas codigo HTML</p>
+            <img src="LogoSenaNaranja.png">
+        </div>
+
+        -->  
 
         <script src="DOM.js"></script>
     </body>
